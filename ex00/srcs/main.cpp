@@ -6,7 +6,7 @@
 /*   By: pfrances <pfrances@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/05 16:29:05 by pfrances          #+#    #+#             */
-/*   Updated: 2023/05/05 19:14:55 by pfrances         ###   ########.fr       */
+/*   Updated: 2023/05/08 10:37:27 by pfrances         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,8 @@ int main(void)
 	std::cout << "map" << std::endl;
 	std::map<size_t, std::string> m;
 	for (size_t i = 0; i < 5; i++) {
-		m[i] = std::string("012345" + i);
+		m[i] = std::string("0");
+		m[i].at(0) = i + '0';
 	}
 
 	for (size_t i = 0; i < 6; i++)

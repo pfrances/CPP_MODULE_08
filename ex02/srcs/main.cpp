@@ -6,7 +6,7 @@
 /*   By: pfrances <pfrances@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/05 16:29:05 by pfrances          #+#    #+#             */
-/*   Updated: 2023/05/08 10:30:58 by pfrances         ###   ########.fr       */
+/*   Updated: 2023/05/08 10:39:24 by pfrances         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 
 int main()
 {
+	//MutantStack version
+	std::cout << "MutantStack version" << std::endl;
 	MutantStack<int> mstack;
 	mstack.push(5);
 	mstack.push(17);
@@ -41,6 +43,7 @@ int main()
 
 	{
 		//List version
+		std::cout << "List version" << std::endl;
 		std::list<int> l;
 		l.push_back(5);
 		l.push_back(17);
